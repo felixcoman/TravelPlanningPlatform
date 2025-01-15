@@ -19,7 +19,7 @@ function CityCard({
 }) {
   console.log("country", country, "city", city, "index", index);
 
-  const url = `/api/${country}?city=${city}`;
+  const url = `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/${country}?city=${city}`;
   console.log("url", url, "clicked", clicked);
 
   const { data, error, loading } = useFetchData(url, clicked, setClicked);

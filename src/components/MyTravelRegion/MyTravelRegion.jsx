@@ -51,7 +51,9 @@ function MyTravelRegion() {
   const [show, setShow] = useState(false);
   const [addData, setAddData] = useState("");
 
-  const url = country ? `/api/${country}/?region=${region}` : null;
+  const url = country
+    ? `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/${country}/?region=${region}`
+    : null;
 
   const { data, error, loading } = useFetchData(url, clicked, setClicked);
   const compactData = data ? data[0] : null;

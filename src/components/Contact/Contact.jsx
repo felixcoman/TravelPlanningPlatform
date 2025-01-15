@@ -69,13 +69,16 @@ const Contact = () => {
   };
 
   const postSubmit = async () => {
-    const add = await fetch(`/api/feedback`, {
-      method: "POST",
-      body: JSON.stringify(inputObj),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const add = await fetch(
+      `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/feedback`,
+      {
+        method: "POST",
+        body: JSON.stringify(inputObj),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     const response = await add.json();
     return response[0].id;
   };

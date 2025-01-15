@@ -18,7 +18,7 @@ function LandmarkCard({
 }) {
   console.log("name", name, "index", index);
 
-  const url = `/api/destinations?name=${name}`;
+  const url = `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/destinations?name=${name}`;
   console.log("url", url);
 
   const { data, error, loading } = useFetchData(url, clicked, setClicked);

@@ -22,9 +22,9 @@ function SelectOptionExplore() {
   let url = null;
 
   if (selectedCountry && selectedCity) {
-    url = `/api/${selectedCountry}?city=${selectedCity}`;
+    url = `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/${selectedCountry}?city=${selectedCity}`;
   } else if (selectedCountry) {
-    url = `/api/${selectedCountry}`;
+    url = `https://travel-planning-platform.vercel.apphttps://travel-planning-platform.vercel.app/api/${selectedCountry}`;
   } else null;
 
   const { data, error, loading, setData } = useFetchData(
